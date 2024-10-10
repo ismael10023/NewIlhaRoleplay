@@ -5,6 +5,7 @@
 }
 
 body {
+    width: 100%;
     font-family: Arial, sans-serif;
     background-color: #121212;
     color: #fff;
@@ -21,17 +22,18 @@ header {
     justify-content: space-between;
     align-items: center;
     z-index: 1000;
+    transition: top 0.3s;
 }
 
 header img {
-    height: 150px; /* Ajuste a altura da logo conforme necessário */
-    transition: transform 0.3s ease, opacity 0.3s ease; /* Transições suaves */
+    height: 150px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
 header img:hover {
     cursor: pointer;
-    transform: scale(1.1); /* Aumenta a logo ao passar o mouse */
-    opacity: 0.8; /* Diminui a opacidade ao passar o mouse */
+    transform: scale(1.1);
+    opacity: 0.8;
 }
 
 nav ul {
@@ -47,33 +49,36 @@ nav ul li a {
 }
 
 .cta-login {
-    color: #1db954; /* Cor inicial do texto */
-    background-color: transparent; /* Fundo transparente */
-    border: 2px solid #1db954; /* Borda verde */
-    padding: 10px 20px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Transições suaves */
+    color: #1db954;
+    background-color: transparent;
+    border: 2px solid #1db954;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 .cta-login:hover {
     cursor: pointer;
-    background-color: #1db954; /* Cor de fundo ao passar o mouse */
-    color: white; /* Cor do texto ao passar o mouse */
+    background-color: #1db954;
+    color: white;
 }
+
 .hero {
     position: relative;
-    height: calc(100vh - 60px); /* Altura total da tela menos a altura do cabeçalho */
-    margin-top: 180px; /* Espaçamento para o cabeçalho */
+    width: 100%;
+    height: calc(100vh - 60px);
+    margin-top: 180px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
     text-align: center;
-    color: white; /* Cor do texto */
-    background: linear-gradient(45deg, #1db954, #1db9e5); /* Gradiente inicial */
-    animation: gradientAnimation 10s ease infinite; /* Animação do gradiente */
+    color: white;
+    background: linear-gradient(45deg, #1db954, #1db9e5);
+    animation: gradientAnimation 10s ease infinite;
 }
+
 .hero h1 {
     font-size: 4rem;
     margin-bottom: 20px;
@@ -172,46 +177,89 @@ footer a {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #333; /* Fundo escuro */
-    color: white; /* Texto branco */
+    background-color: #333;
+    color: white;
     border: none;
-    border-radius: 50%; /* Bordas arredondadas para um formato circular */
-    padding: 10px; /* Espaçamento interno */
-    font-size: 20px; /* Tamanho da fonte */
+    border-radius: 50%;
+    padding: 10px;
+    font-size: 20px;
     cursor: pointer;
-    display: none; /* Inicialmente escondido */
+    display: none;
     z-index: 1000;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5); /* Sombra para profundidade */
-    transition: background-color 0.3s, transform 0.3s; /* Transições suaves */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, transform 0.3s;
 }
 
 #backToTop:hover {
-    background-color: #555; /* Cor ao passar o mouse */
-    transform: scale(1.1); /* Efeito de aumentar um pouco */
+    background-color: #555;
+    transform: scale(1.1);
 }
-header {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.8);
-    padding: 15px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    z-index: 1000;
-    transition: top 0.3s; /* Adicione esta linha */
-}
-.hero {
-    position: relative;
-    height: 100vh; /* Altura total da tela */
-    overflow: hidden;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.discord-container {
+    max-width: 800px;
+    margin: 0 auto;
     text-align: center;
-    color: white; /* Cor do texto */
-    background: linear-gradient(45deg, #1db954, #1db9e5); /* Gradiente inicial */
-    animation: gradientAnimation 10s ease infinite; /* Animação do gradiente */
+}
+
+.discord-icon {
+    font-size: 50px;
+    color: #7289da;
+    margin-bottom: 15px;
+}
+
+#discord {
+    background-color: #2c2f33;
+    color: white;
+    margin: 20px auto; /* Altera para 'auto' para centralizar */
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+    max-width: 800px; /* Define uma largura máxima */
+    text-align: center; /* Centraliza o texto */
+}
+
+.cta-discord {
+    color: #ffffff;
+    background-color: #7289da;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.cta-discord:hover {
+    background-color: #5b6eae;
+    transform: scale(1.05);
+}
+
+.discord-container {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px; /* Adiciona um espaçamento interno */
+}
+
+.discord-icon {
+    font-size: 50px;
+    color: #7289da;
+    margin-bottom: 15px; /* Espaçamento abaixo do ícone */
+}
+
+#discord h2 {
+    margin-bottom: 15px; /* Espaçamento abaixo do título */
+}
+
+#discord p {
+    margin-bottom: 25px; /* Espaçamento abaixo do parágrafo */
+}
+
+.cta-discord {
+    margin-top: 15px; /* Espaçamento acima do botão */
+    color: #ffffff;
+    background-color: #7289da;
+    padding: 15px 30px;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
 }
 
 @keyframes gradientAnimation {
@@ -224,73 +272,4 @@ header {
     100% {
         background: linear-gradient(45deg, #1db954, #1db9e5);
     }
-}
-
-.hero-content {
-    position: relative; /* Para garantir que o conteúdo fique acima do fundo */
-    z-index: 1; /* Colocar o conteúdo acima do fundo */
-}
-
-header nav ul {
-    list-style: none; /* Remove a lista padrão */
-    padding: 0; /* Remove o padding */
-    margin: 0; /* Remove a margem */
-    display: flex; /* Flexbox para alinhar os itens */
-}
-
-header nav ul li {
-    margin: 0 2px; /* Espaçamento entre os itens */
-}
-
-header nav ul li a {
-    color: white; /* Cor inicial dos links */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: color 0.3s ease; /* Transição suave para a cor */
-}
-
-header nav ul li a:hover {
-    color: #1db954; /* Cor ao passar o mouse */
-}
-#discord {
-    background-color: #2c2f33; /* Fundo da seção */
-    color: white; /* Cor do texto */
-    padding: 40px; /* Espaçamento interno */
-    text-align: center; /* Centraliza o texto */
-    margin: 20px 0; /* Espaçamento acima e abaixo da seção */
-    border-radius: 10px; /* Bordas arredondadas */
-    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Sombra para profundidade */
-}
-
-.discord-container {
-    max-width: 800px; /* Largura máxima para centralizar o conteúdo */
-    margin: 0 auto; /* Centraliza o container */
-}
-
-#discord h2 {
-    margin-bottom: 15px; /* Espaçamento abaixo do título */
-    font-size: 2em; /* Tamanho do título */
-}
-
-#discord p {
-    margin-bottom: 25px; /* Espaçamento abaixo do parágrafo */
-    font-size: 1.2em; /* Tamanho do texto */
-}
-
-.cta-discord {
-    color: #ffffff; /* Cor do texto */
-    background-color: #7289da; /* Fundo do botão */
-    padding: 15px 30px; /* Espaçamento interno */
-    border-radius: 5px; /* Bordas arredondadas */
-    text-decoration: none; /* Remove o sublinhado */
-    transition: background-color 0.3s ease, transform 0.3s ease; /* Transições suaves */
-}
-
-.cta-discord:hover {
-    background-color: #5b6eae; /* Cor do fundo ao passar o mouse */
-    transform: scale(1.05); /* Aumenta o botão ao passar o mouse */
-}
-.discord-icon {
-    font-size: 50px; /* Tamanho do ícone */
-    color: #7289da; /* Cor do ícone */
-    margin-bottom: 15px; /* Espaçamento abaixo do ícone */
 }
