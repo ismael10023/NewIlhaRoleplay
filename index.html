@@ -11,105 +11,110 @@
 
     <!-- Cabeçalho -->
     <header>
-        <img src="src/logo.png" alt="New Ilha Roleplay">
+        <img src="src/logo.png" alt="Logo do New Ilha Roleplay">
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
-                <li><a href="#">Jogabilidade</a></li>
-                <li><a href="#">Personagens</a></li>
-                <li><a href="#">Notícias</a></li>
-                <li><a href="#">Comunidade</a></li>
+                <li><a href="#sobre">Jogabilidade</a></li>
+                <li><a href="#personagens">Personagens</a></li>
+                <li><a href="#noticias">Notícias</a></li>
+                <li><a href="#discord">Comunidade</a></li>
                 <li><a href="#">Loja</a></li>
             </ul>
         </nav>
         <a href="#" class="cta-login">Login</a>
     </header>
 
-    <!-- Seção Hero -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Bem-vindo ao Mundo de New Ilha Roleplay</h1>
-            <a href="#" class="cta">Jogue Agora</a>
-        </div>
-    </section>
-    <!-- Sobre o Jogo -->
-    <section id="sobre">
-        <h2>Descubra o Jogo</h2>
-        <div class="features">
-            <div class="feature">
-                <img src="src/mundo.png" alt="Mundo Aberto">
-                <h3>Mundo Aberto</h3>
-                <p>Explore um vasto universo com infinitas possibilidades.</p>
+    <main>
+        <!-- Seção Hero -->
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Bem-vindo ao Mundo de New Ilha Roleplay</h1>
+                <a href="#" class="cta">Jogue Agora</a>
             </div>
-            <div class="feature">
-                <img src="src/multiplayer.png" alt="Multiplayer">
-                <h3>Multiplayer</h3>
-                <p>Jogue com amigos em batalhas épicas em tempo real.</p>
-            </div>
-            <div class="feature">
-                <img src="src/cidade.png" alt="RPG de Ação">
-                <h3>RPG de Ação</h3>
-                <p>Desenvolva seu personagem em uma jornada imersiva.</p>
-            </div>
-        </div>
-    </section>
-    <!-- Discord -->
-    <section id="discord">
-        <div class="discord-container">
-            <div class="discord-icon">
-                <i class="fab fa-discord"></i> <!-- Ícone do Discord -->
-            </div>
-            <h2>Junte-se à Nossa Comunidade no Discord!</h2>
-            <p>Converse com outros jogadores, participe de eventos e fique por dentro das novidades!</p>
-            <a href="https://discord.gg/KdfYa38VaY" class="cta-discord">Entrar no Discord</a>
-        </div>
-    </section>
+        </section>
 
-    <!-- Notícias -->
-    <section id="noticias">
-        <h2>Últimas Notícias</h2>
-        <div class="news">
-            <div class="news-item">
-                <h3>Atualização 1.2 Chegou!</h3>
-                <p>Descubra todas as novas funcionalidades da nossa última atualização.</p>
+        <!-- Sobre o Jogo -->
+        <section id="sobre">
+            <h2>Descubra o Jogo</h2>
+            <div class="features">
+                <div class="feature">
+                    <img src="src/mundo.png" alt="Imagem do Mundo Aberto">
+                    <h3>Mundo Aberto</h3>
+                    <p>Explore um vasto universo com infinitas possibilidades.</p>
+                </div>
+                <div class="feature">
+                    <img src="src/multiplayer.png" alt="Imagem do Multiplayer">
+                    <h3>Multiplayer</h3>
+                    <p>Jogue com amigos em batalhas épicas em tempo real.</p>
+                </div>
+                <div class="feature">
+                    <img src="src/cidade.png" alt="Imagem do RPG de Ação">
+                    <h3>RPG de Ação</h3>
+                    <p>Desenvolva seu personagem em uma jornada imersiva.</p>
+                </div>
             </div>
-            <div class="news-item">
-                <h3>Evento Especial de Halloween</h3>
-                <p>Participe do evento temático e ganhe recompensas exclusivas!</p>
+        </section>
+
+        <!-- Discord -->
+        <section id="discord">
+            <div class="discord-container">
+                <div class="discord-icon">
+                    <i class="fab fa-discord"></i>
+                </div>
+                <h2>Junte-se à Nossa Comunidade no Discord!</h2>
+                <p>Converse com outros jogadores, participe de eventos e fique por dentro das novidades!</p>
+                <a href="https://discord.gg/KdfYa38VaY" class="cta-discord">Entrar no Discord</a>
             </div>
-            <div class="news-item">
-                <h3>Torneio Competitivo</h3>
-                <p>Inscreva-se no nosso torneio e mostre suas habilidades.</p>
+        </section>
+
+        <!-- Notícias -->
+        <section id="noticias">
+            <h2>Últimas Notícias</h2>
+            <div class="news">
+                <div class="news-item">
+                    <h3>Atualização 1.2 Chegou!</h3>
+                    <p>Descubra todas as novas funcionalidades da nossa última atualização.</p>
+                </div>
+                <div class="news-item">
+                    <h3>Evento Especial de Halloween</h3>
+                    <p>Participe do evento temático e ganhe recompensas exclusivas!</p>
+                </div>
+                <div class="news-item">
+                    <h3>Torneio Competitivo</h3>
+                    <p>Inscreva-se no nosso torneio e mostre suas habilidades.</p>
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <!-- Rodapé -->
     <footer>
         <p>&copy; 2024 New Ilha Roleplay. Todos os direitos reservados.</p>
         <p><a href="#">Termos de Serviço</a> | <a href="#">Política de Privacidade</a></p>
     </footer>
+
     <button id="backToTop" style="display: none;">
         <i class="fas fa-chevron-up"></i>
     </button>
+
     <script>
         const header = document.querySelector('header');
         const backToTopButton = document.getElementById('backToTop');
 
-        window.onscroll = function() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 100) {
                 header.style.top = "-180px"; // Esconder cabeçalho
                 backToTopButton.style.display = "block"; // Mostrar botão
             } else {
                 header.style.top = "0"; // Mostrar cabeçalho
                 backToTopButton.style.display = "none"; // Esconder botão
             }
-        };
+        });
 
-        backToTopButton.onclick = function() {
+        backToTopButton.onclick = () => {
             window.scrollTo({top: 0, behavior: 'smooth'}); // Voltar ao topo
         };
     </script>
 </body>
 </html>
-
